@@ -1,0 +1,18 @@
+// เหลือ
+LINE SP DATA 
+แจ้ง ข้อมูล  lat long SP
+
+SP DATA 
+:: เพิ่ม SP  ทำเป็น modal 
+:: แก้ไข ข้อมูล ทำเป็น modal 
+:: ลบ Sp
+
+Profile
+:: เพิ่ม Profile
+:: แก้ไข ข้อมูล Profile
+:: ลบ Profile
+
+Profile สำหรับ Project SI 
+:: เพิ่ม ช่อง vlan 1-4 Profile
+:: แก้ไข ข้อมูล Profile
+:: ลบ Profile

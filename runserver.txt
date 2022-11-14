@@ -1,0 +1,15 @@
+Run Web 
+ip defult 10.0.2.15/24
+ubuntu linux Servcr  ver 22.04.1 -64bit lts
+name: nockkn
+server name : noc-server
+username : sinetadmin
+pass : s1n3tkkn!
+desktop
+https://phoenixnap.com/kb/how-to-install-a-gui-on-ubuntu#ftoc-heading-4
+Install Wine  For ubuntu server
+-sudo apt update
+-sudo apt install wine64
+-wine --version
+Filezilar Server
+https://cloudinfrastructureservices.co.uk/how-to-install-filezilla-ftp-server-on-ubuntu-server/

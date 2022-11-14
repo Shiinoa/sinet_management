@@ -1,0 +1,17 @@
+Docker
+--download-the-linux-kernel-update-package
+https://learn.microsoft.com/th-th/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+Ubuntu 18.04.5
+
+
+---ForWeb----
+components
+MD5 boottstrap
+
+hub.docker
+
+mysql
+
+
+
+//hosting use firebase

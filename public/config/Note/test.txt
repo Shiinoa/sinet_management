@@ -1,0 +1,206 @@
+  switch ($user_status){
+                    case "open":
+                        echo 
+                            '<tr class="p-2 mb-1" style="text-align:left; ">'.
+                            '<td ><span class="badge badge-success rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                            '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                            '<td><p class="text-monospace font-weight-bold" name="u_id">'.$u_id.'</p></td>'.
+                            '<td><p class="font-weight-bold">'.$name.'</p></td>'.
+                            '<td>'.$ont.'</td>'.
+                            '<td>'.$node.'</td>'.
+                            '<td>'.$tc_code.'</td>'.
+                            '<td>'.$mac_pon.'</td>'.
+                            '<td>'.$phone_no.'</td>'.
+                            '<td>'.$btn_view.'</td>'.
+                            '</tr>';
+                        break;
+                    case "suspend":
+                            echo 
+                            '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                            '<td ><span class="badge badge-warning rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                            '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                            '<td><p class="font-weight-bold">'.$u_id.'</p></td>'.
+                            '<td>'.$name.'</td>'.
+                            '<td>'.$ont.'</td>'.
+                            '<td>'.$node.'</td>'.
+                            '<td>'.$tc_code.'</td>'.
+                            '<td>'.$mac_pon.'</td>'.
+                            '<td>'.$phone_no.'</td>'.
+                            '<td>'.$btn_view.'</td>'.
+                            '</tr>';
+                            break;
+                    case "terminate":
+                            echo 
+                            '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                            '<td ><span class="badge badge-danger rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                            '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                            '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                            '<td>'.$name.'</td>'.
+                            '<td>'.$ont.'</td>'.
+                            '<td>'.$node.'</td>'.
+                            '<td>'.$tc_code.'</td>'.
+                            '<td>'.$mac_pon.'</td>'.
+                            '<td>'.$phone_no.'</td>'.
+                            '<td>'.$btn_view.'</td>'.
+                            '</tr>';
+                            break;
+                    case "project":
+                            echo 
+                            '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                            '<td ><span class="badge badge-primary rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                            '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                            '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                            '<td>'.$name.'</td>'.
+                            '<td>'.$ont.'</td>'.
+                            '<td>'.$node.'</td>'.
+                            '<td>'.$tc_code.'</td>'.
+                            '<td>'.$mac_pon.'</td>'.
+                            '<td>'.$phone_no.'</td>'.
+                            '<td>'.$btn_view.'</td>'.
+                            '</tr>';
+                            break;
+                    case "้hold":
+                            echo 
+                            '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                            '<td ><span class="badge badge-dark rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                            '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                            '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                            '<td>'.$name.'</td>'.
+                            '<td>'.$ont.'</td>'.
+                            '<td>'.$node.'</td>'.
+                            '<td>'.$tc_code.'</td>'.
+                            '<td>'.$mac_pon.'</td>'.
+                            '<td>'.$phone_no.'</td>'.
+                            '<td>'.$btn_view.'</td>'.
+                            '</tr>';
+                            break;
+                    case "na":
+                            echo 
+                            '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                            '<td ><span class="badge badge-info rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                            '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                            '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                            '<td>'.$name.'</td>'.
+                            '<td>'.$ont.'</td>'.
+                            '<td>'.$node.'</td>'.
+                            '<td>'.$tc_code.'</td>'.
+                            '<td>'.$mac_pon.'</td>'.
+                            '<td>'.$phone_no.'</td>'.
+                            '<td>'.$btn_view.'</td>'.
+                            '</tr>';
+                            break;
+                }
+
+
+                -------------------------------------------------
+
+
+                if($user_status == "open"){
+                    echo 
+                    '<tr class="p-2 mb-1" style="text-align:left; ">'.
+                    '<td ><span class="badge badge-success rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                    '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                    '<td><p class="text-monospace font-weight-bold" name="u_id">'.$u_id.'</p></td>'.
+                    '<td><p class="font-weight-bold">'.$name.'</p></td>'.
+                    '<td>'.$ont.'</td>'.
+                    '<td>'.$node.'</td>'.
+                    '<td>'.$tc_code.'</td>'.
+                    '<td>'.$mac_pon.'</td>'.
+                    '<td>'.$phone_no.'</td>'.
+                    '<td>'.$btn_view.'</td>'.
+                    '</tr>';
+                }
+                else if($user_status == "suspend")
+                {
+                    echo 
+                    '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                    '<td ><span class="badge badge-warning rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                    '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                    '<td><p class="font-weight-bold">'.$u_id.'</p></td>'.
+                    '<td>'.$name.'</td>'.
+                    '<td>'.$ont.'</td>'.
+                    '<td>'.$node.'</td>'.
+                    '<td>'.$tc_code.'</td>'.
+                    '<td>'.$mac_pon.'</td>'.
+                    '<td>'.$phone_no.'</td>'.
+                    '<td>'.$btn_view.'</td>'.
+                    '</tr>';
+                }
+                else if($user_status == "terminate")
+                {
+                    echo 
+                    '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                    '<td ><span class="badge badge-danger rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                    '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                    '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                    '<td>'.$name.'</td>'.
+                    '<td>'.$ont.'</td>'.
+                    '<td>'.$node.'</td>'.
+                    '<td>'.$tc_code.'</td>'.
+                    '<td>'.$mac_pon.'</td>'.
+                    '<td>'.$phone_no.'</td>'.
+                    '<td>'.$btn_view.'</td>'.
+                    '</tr>';
+                }
+                else if($user_status == "project")
+                {
+                    echo 
+                    '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                    '<td ><span class="badge badge-primary rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                    '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                    '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                    '<td>'.$name.'</td>'.
+                    '<td>'.$ont.'</td>'.
+                    '<td>'.$node.'</td>'.
+                    '<td>'.$tc_code.'</td>'.
+                    '<td>'.$mac_pon.'</td>'.
+                    '<td>'.$phone_no.'</td>'.
+                    '<td>'.$btn_view.'</td>'.
+                    '</tr>';
+                }
+                else if($user_status == "้hold")
+                {
+                    echo 
+                    '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                    '<td ><span class="badge badge-dark rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                    '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                    '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                    '<td>'.$name.'</td>'.
+                    '<td>'.$ont.'</td>'.
+                    '<td>'.$node.'</td>'.
+                    '<td>'.$tc_code.'</td>'.
+                    '<td>'.$mac_pon.'</td>'.
+                    '<td>'.$phone_no.'</td>'.
+                    '<td>'.$btn_view.'</td>'.
+                    '</tr>';
+                }
+                else if($user_status == "na")
+                {
+                    echo 
+                    '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                    '<td ><span class="badge badge-info rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                    '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                    '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                    '<td>'.$name.'</td>'.
+                    '<td>'.$ont.'</td>'.
+                    '<td>'.$node.'</td>'.
+                    '<td>'.$tc_code.'</td>'.
+                    '<td>'.$mac_pon.'</td>'.
+                    '<td>'.$phone_no.'</td>'.
+                    '<td>'.$btn_view.'</td>'.
+                    '</tr>';
+                }else{
+                    echo 
+                    '<tr class="p-3 mb-2" style="text-align:left; ">'.
+                    '<td ><span class="badge badge-secondary rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
+                    '<td><p style="color:darkolivegreen;font-weight:bold">'.$sp.'</p></td>'.
+                    '<td><p class="text-monospace font-weight-bold">'.$u_id.'</p></td>'.
+                    '<td>'.$name.'</td>'.
+                    '<td>'.$ont.'</td>'.
+                    '<td>'.$node.'</td>'.
+                    '<td>'.$tc_code.'</td>'.
+                    '<td>'.$mac_pon.'</td>'.
+                    '<td>'.$phone_no.'</td>'.
+                    '<td>'.$btn_view.'</td>'.
+                    '</tr>';
+                }
