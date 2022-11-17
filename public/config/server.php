@@ -3,7 +3,7 @@
     $servername = "localhost";
     $username ="root";
     $password ="";
-    $dbname = "sinet-kkn";
+    $dbname = "sinet_kkn";
 
     //For  DATA  
     try {

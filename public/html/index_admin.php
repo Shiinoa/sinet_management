@@ -154,12 +154,16 @@ include('../config/server.php');
                                     <div class="col-md-4">
                                         <select class="form-select " aria-label="select-status" id="check_status" name="check_status">
                                             <option selected value="all">All Status</option>
-                                            <option value="open">Open</option>
-                                            <option value="terminate">Terminate</option>
-                                            <option value="suspend">Suspend</option>
-                                            <option value="project">Project</option>
-                                            <option value="na">N/A</option>
-                                            <option value="projectSI">Project-SI</option>
+                                            <?php 
+                                                    $data_olt_res = $db->query("SELECT DISTINCT user_status FROM installed ORDER BY user_status ");
+                                                    
+                                                    while($row = $data_olt_res->fetch()){
+                                            ?>
+                                                <option value="<?php echo $row['user_status']?>"><?php echo $row['user_status']?></option>
+
+                                            <?php }?>
+
+                                            
                                         </select>
                                     </div>
                                     <div class="col-md-5">

@@ -96,11 +96,16 @@ session_start();
                 <div class="col-sm-2">
                     <label for="">Status</label>
                     <select id="inputState" class="form-select" name="user_status" required>
-                    <option selected>open</option>
-                    <option>suspend</option>
-                    <option>hold</option>
-                    <option>project</option>
-                    <option>na</option>
+                    <option selected>status</option>
+                    <?php 
+                            $data_olt_res = $db->query("SELECT DISTINCT user_status FROM installed ORDER BY user_status ");
+                                                    
+                            while($row = $data_olt_res->fetch()){
+                        ?>
+                            <option value="<?php echo $row['user_status']?>"><?php echo $row['user_status']?></option>
+
+                    <?php }?>
+
                     </select>
                 </div>
                 
@@ -271,7 +276,7 @@ session_start();
                                         </thead>
                                         <tbody>
                                             <?php 
-                                                $select_data = $db->prepare("SELECT * FROM installed WHERE mac_pon LIKE '' ");
+                                                $select_data = $db->prepare("SELECT * FROM installed WHERE mac_pon LIKE '' LIMIT 20 ");
                                                 $select_data->execute();
                                                 while ($row = $select_data->fetch(PDO::FETCH_ASSOC)) {    
                                             ?>

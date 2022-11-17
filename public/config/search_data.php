@@ -64,7 +64,7 @@
                         "btn_view_SI" => $btn_view_SI);  
 
                         switch ($user_status){
-                            case "open":
+                            case "Open":
                                 echo 
                                     '<tr class="p-2 mb-1" style="text-align:left; ">'.
                                     '<td ><span class="badge badge-success rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
@@ -79,7 +79,7 @@
                                     '<td>'.$btn_view.'</td>'.
                                     '</tr>';
                                 break;
-                            case "suspend":
+                            case "Suspend":
                                     echo 
                                     '<tr class="p-3 mb-2" style="text-align:left; ">'.
                                     '<td ><span class="badge badge-warning rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
@@ -94,7 +94,7 @@
                                     '<td>'.$btn_view.'</td>'.
                                     '</tr>';
                                     break;
-                            case "terminate":
+                            case "Terminate":
                                     echo 
                                     '<tr class="p-3 mb-2" style="text-align:left; ">'.
                                     '<td ><span class="badge badge-danger rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
@@ -109,7 +109,7 @@
                                     '<td>'.$btn_view.'</td>'.
                                     '</tr>';
                                     break;
-                            case "project":
+                            case "Project":
                                     echo 
                                     '<tr class="p-3 mb-2" style="text-align:left; ">'.
                                     '<td ><span class="badge badge-primary rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
@@ -124,7 +124,7 @@
                                     '<td>'.$btn_view.'</td>'.
                                     '</tr>';
                                     break;
-                            case "้hold":
+                            case "Hold":
                                     echo 
                                     '<tr class="p-3 mb-2" style="text-align:left; ">'.
                                     '<td ><span class="badge badge-dark rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.
@@ -139,7 +139,7 @@
                                     '<td>'.$btn_view.'</td>'.
                                     '</tr>';
                                     break;
-                            case "na":
+                            case "N/A":
                                     echo 
                                     '<tr class="p-3 mb-2" style="text-align:left; ">'.
                                     '<td ><span class="badge badge-info rounded-pill d-inline" style="font-size:13px;">'.$user_status.'</span></td>'.
@@ -154,7 +154,7 @@
                                     '<td>'.$btn_view.'</td>'.
                                     '</tr>';
                                     break;
-                            case "projectSI":
+                            case "ProjectSI":
                                 echo 
                                 '<tr class="p-3 mb-2" style="text-align:left; ">'.
                                 '<td ><span class="badge badge-secondary rounded-pill d-inline" style="font-size:13px">'.$user_status.'</span></td>'.

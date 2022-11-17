@@ -1,7 +1,7 @@
 <?php
 require '../config/server.php';
 require '../vendor/autoload.php';
-
+set_time_limit(500);
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
@@ -37,7 +37,7 @@ if(!empty($_FILES["import_file"])){
                     $up_qury ="UPDATE installed SET user_status='$user_status' WHERE u_id ='$customer'";
                     $result_up_qury = $db->prepare($up_qury);
                     $result_up_qury->execute();
-                   
+                    
                     $msg=1;
                   
                 }
@@ -46,7 +46,6 @@ if(!empty($_FILES["import_file"])){
                     $up_qury ="INSERT INTO installed (u_id,user_status) VALUES ('$customer','$user_status')";
                     $result_up_qury = $db->prepare($up_qury);
                     $result_up_qury->execute();
-                   
                     $msg=1;
                    
                 }      

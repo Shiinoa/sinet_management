@@ -96,9 +96,16 @@ session_start();
                 <div class="col-sm-2">
                     <label for="">Status</label>
                     <select id="inputState" class="form-select" name="user_status" required>
-                    <option selected>projectSI</option>
-                    <option>suspend</option>
-                    <option>hold</option>
+                    <option selected>ProjectSI</option>
+                    <?php 
+                            $data_olt_res = $db->query("SELECT DISTINCT user_status FROM installed ORDER BY user_status ");
+                                                    
+                            while($row = $data_olt_res->fetch()){
+                        ?>
+                            <option value="<?php echo $row['user_status']?>"><?php echo $row['user_status']?></option>
+
+                    <?php }?>
+
                     
                     </select>
                 </div>

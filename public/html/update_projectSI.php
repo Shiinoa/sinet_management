@@ -85,12 +85,17 @@ include_once('../config/update_projectSI_db.php');
                 <div class="col-sm-2">
                     <label for="">Status</label>
                         <select id="inputState" class="form-select" name="user_status" value="" >
-                            <option selected><?php echo $row['user_status'] ?></option>
-                            <option>suspend</option>
-                            <option>hold</option>
-                            <option>project</option>
-                            <option>na</option>
-                            <option>projectSI</option>
+                            <option selected><?php echo $row['user_status'] ?></option>  
+                            <?php 
+                            $data_olt_res = $db->query("SELECT DISTINCT user_status FROM installed ORDER BY user_status ");
+                                                    
+                            while($row_st = $data_olt_res->fetch()){
+                            ?>
+                            <option value="<?php echo $row_st['user_status']?>"><?php echo $row_st['user_status']?></option>
+
+                            <?php }?>
+
+                    
                         </select>
                 </div>
                 

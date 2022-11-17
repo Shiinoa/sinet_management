@@ -30,7 +30,7 @@
                 '<td>'.$u_id.'</td>'.
                ' <td>'.$u_name.'</td>'.
                ' <td>'.$u_mac_pon.'</td>'.
-                '<td>'.$g_sp.'</td>'.
+                '<td>'.$u_sp.'</td>'.
                 '<td>'.$u_node.'-'.$g_olt.'</td>'.
                 '<td>'.$u_tc_code.'</td>'.
                 '<td>'.$u_nonid.'</td>'.
