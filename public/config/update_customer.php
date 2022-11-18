@@ -72,7 +72,7 @@ if(isset($_POST['update']))
                     if($updateData->execute()){
                         $_SESSION['success'] = 'Update User Success';
                         header("location;../html/update_customer_db.php?is_id=$is_id");
-                        header("Refresh:1;../html/install_customer.php");
+                        header("Refresh:1;../html/index_admin.php");
                     }else {
                         $_SESSION['error'] = 'Update User Error';
                         
