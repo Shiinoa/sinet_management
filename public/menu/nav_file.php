@@ -18,7 +18,7 @@
             <ul class="navbar-nav me-auto mb-3 mb-lg-0">
                 <!--  FTTX -->
                 <?php if(isset($_SESSION['status'])){
-                                    $data_st = $_SESSION['status'];
+                        $data_st = $_SESSION['status'];
                                     }
                 if($data_st != "USER" ){?>
                 <li class="nav-item dropdown me-3">
@@ -44,7 +44,7 @@
                 <?php if(isset($_SESSION['status'])){
                     $data_st = $_SESSION['status'];
                                     }
-                    if($data_st != "USER" ){?>
+                if($data_st != "USER" ){?>
 
                 <!--  OLT -->
                 <li class="nav-item dropdown me-3">
