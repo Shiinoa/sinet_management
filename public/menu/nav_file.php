@@ -20,7 +20,7 @@
                 <?php if(isset($_SESSION['status'])){
                                     $data_st = $_SESSION['status'];
                                     }
-                    if($data_st != "USER" ){?>
+                if($data_st != "USER" ){?>
                 <li class="nav-item dropdown me-3">
                 <button  type="button" class="btn btn-warning dropdown-toggle" href="#" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-expanded="false">
                     FTTX
@@ -42,7 +42,7 @@
                 </a>
                 </li>
                 <?php if(isset($_SESSION['status'])){
-                                    $data_st = $_SESSION['status'];
+                    $data_st = $_SESSION['status'];
                                     }
                     if($data_st != "USER" ){?>
 
