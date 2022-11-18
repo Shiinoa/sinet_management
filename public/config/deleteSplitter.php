@@ -19,6 +19,6 @@ if(isset($_GET['del_id']))
 }
 }else {
     echo "<script>alert('Permission is USER!')</script>";
-    echo "<script>window.location.href='../html/index_admin.php'</script>";
+    echo "<script>window.location.href='../html/sp_data.php'</script>";
 }
 ?>

@@ -1,5 +1,10 @@
 <?php
 require ('server.php');
+if(isset($_SESSION['status'])){
+    $data_st = $_SESSION['status'];
+} 
+if($data_st != "USER" )
+{
 if(isset($_POST['update']))
     {
         $is_id = $_GET['is_id'];
@@ -81,5 +86,9 @@ if(isset($_POST['update']))
                 
             }
         }
-    }    
+    }
+}else {
+    echo "<script>alert('Permission is USER!')</script>";
+    echo "<script>window.location.href='../html/index_admin.php'</script>";
+}    
 ?>

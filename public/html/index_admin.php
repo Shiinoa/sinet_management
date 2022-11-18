@@ -186,7 +186,7 @@ include('../config/server.php');
                                             <th width="10%">Index</th>
                                             <th>OLT</th>
                                             <th>Package</th>
-                                            <th>PPPOE</th>
+                                            <th>G-pon</th>
                                             <th>Phone</th>
                                             <!--BTN-->
                                             <th  width="20%">View</th>

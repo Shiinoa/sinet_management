@@ -57,7 +57,13 @@ include '../config/server.php';
 <body>
     <div class="container">
         <div class="mt-5">
-            <h2>SP DATA ::</h2> <hr>
+            <h2>SP Total ::
+                <?php           $result_count = "SELECT count(sp_id)  FROM sp_detail " ;
+                                $pdo_res = $db->query($result_count);
+                                $table = $pdo_res->fetchColumn();
+                                echo "$table SP"; 
+                 ?>
+            </h2> <hr>
             <form action="" method="post">
                 <div class="row ">
                     <?php if(isset($_SESSION['status'])){
