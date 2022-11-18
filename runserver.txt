@@ -13,3 +13,12 @@ Install Wine  For ubuntu server
 -wine --version
 Filezilar Server
 https://cloudinfrastructureservices.co.uk/how-to-install-filezilla-ftp-server-on-ubuntu-server/
+
+username:for mysql -u root -p
+root@localhost
+S1n3tkkndbms
+
+
+--phpmyadmin--
+nockkn
+S1n3tkkn!

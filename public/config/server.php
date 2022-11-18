@@ -1,8 +1,8 @@
 <?php
 
     $servername = "localhost";
-    $username ="root";
-    $password ="";
+    $username ="nockkn";
+    $password ="S1n3tkkn!";
     $dbname = "sinet_kkn";
 
     //For  DATA  
